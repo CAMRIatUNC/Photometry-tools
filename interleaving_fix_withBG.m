@@ -14,6 +14,8 @@ function interleaving_fix_withBG(filename,BG_name,dummy,formal_data_points,BG_sa
 % freq: simpling frequency
 % method: "time" or "index", fix frame-lost according to timestamps or interleaving order
 % GroupOrIndividual: input "group" or "individual" (Hbs only be calculated when individual is used)
+
+% Tzu-Hao Harry Chao 2020/06/13
 %%
 sampling_points=formal_data_points+dummy;
 
