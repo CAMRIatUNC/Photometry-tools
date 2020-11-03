@@ -5,6 +5,7 @@ function [HRF]=HRF_from_photometry_data(neuronal_activity,BOLD,sampling_rate,HRF
 % neuronal_activity / BOLD: data recoreded in column
 % pre: 0 or any number if the neuronal_activity is considered as feedback
 % response and can be after the initiation of hemodynamic response.
+% Tzu-Hao Harry Chao 2020/07/04
 %%
 
 DA_zscore=(neuronal_activity-mean(neuronal_activity))/std(neuronal_activity);
