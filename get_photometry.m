@@ -1,5 +1,7 @@
 function [data,timestamp_sec,wavelength]=get_photometry
-
+%%
+% read the raw txt file output from Oceanview into matlab matrix
+%%
 [dataID,path_data] = uigetfile('*.txt','Select data');
 cd(path_data)
 starting_row=0; test = {{'a'}}; % skipping headers
