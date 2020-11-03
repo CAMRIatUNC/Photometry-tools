@@ -1,5 +1,14 @@
 function interleaving_fix_withBG(filename,BG_name,dummy,formal_data_points,BG_sampling_points,freq,method,GroupOrIndividual)
 
+% filename: filename of Oceanview recorded .txt file
+% BG_name: background recored w/o connecting the fiber cable to the animal
+% dummy: how many time points to skip
+% formal_data_points: how many data points to expect if no frame-lost
+% BG_sampling_points: how many data points to use from the background file
+% freq: simpling frequency
+% method: "time" or "index", fix frame-lost according to timestamps or interleaving order
+% GroupOrIndividual: input "group" or "individual" (Hbs only be calculated when individual is used)
+
 sampling_points=formal_data_points+dummy;
 
 %%
@@ -133,6 +142,7 @@ end
 title('GCaMP excited by 400nm')
 
 %%
+if strcmp(GroupOrIndividual,'individual')
 disp('calculating Hbs (applicable for spec A only)...')
 Rscript='/Library/Frameworks/R.framework/Versions/4.0/Resources/bin/Rscript';
 Rfile='/Users/Mac/Documents/MATLAB/hemo_correction_script_interleaving/hemo_correction_script400nm.R';
@@ -153,6 +163,7 @@ Hbs = textscan(file, ['%f' '%f' '%f' '%f'],'HeaderLines',1);
 fclose(file);
 Hbs=cell2mat(Hbs);
 HbT=Hbs(:,1)+Hbs(:,2);
+end
 %%
 
 disp('saving result...')
