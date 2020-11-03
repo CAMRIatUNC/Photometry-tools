@@ -1,4 +1,8 @@
 function [] = unmixing2
+%%
+% Read raw mixed spectra time series from Oceanview output, and unmix the spectra time series one by one using user defined spectra reference.
+%%
+
 clc
 
 [dataID,path_data] = uigetfile('*.txt','Select data');
