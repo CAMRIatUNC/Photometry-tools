@@ -1,4 +1,10 @@
 function interleaving_fix_withBG(filename,BG_name,dummy,formal_data_points,BG_sampling_points,freq,method,GroupOrIndividual)
+%%
+% 1. Read 400/488 nm interleaved recorded GCaMP spectra time series output from Oceanview.
+% 2. Resolve 400 and 488 excited GCaMP spectra, and fix lost-frames if there's any.
+% 3. Remove the autofluorescence of optical cable.
+% 4. Calculate the amplitude time courses of GCaMP signal excited by 400 and 488 nm lasers respectively.
+% 5. Extract hemoglobin changes time course from GCaMP signal excited by 400 nm laser.
 
 % filename: filename of Oceanview recorded .txt file
 % BG_name: background recored w/o connecting the fiber cable to the animal
@@ -8,7 +14,7 @@ function interleaving_fix_withBG(filename,BG_name,dummy,formal_data_points,BG_sa
 % freq: simpling frequency
 % method: "time" or "index", fix frame-lost according to timestamps or interleaving order
 % GroupOrIndividual: input "group" or "individual" (Hbs only be calculated when individual is used)
-
+%%
 sampling_points=formal_data_points+dummy;
 
 %%
