@@ -8,7 +8,6 @@ function [HRF]=HRF_from_photometry_data(neuronal_activity,hemodynamics,sampling_
 % Tzu-Hao Harry Chao 2020/07/04
 %%
 
-DA_zscore=(neuronal_activity-mean(neuronal_activity))/std(neuronal_activity);
 hemodynamics=hemodynamics-min(hemodynamics);
 
 HRF_length=HRF_length*sampling_rate+1; % sec to data points
