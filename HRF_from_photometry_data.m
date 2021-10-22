@@ -1,7 +1,7 @@
 function [HRF]=HRF(neuronal_activity,hemodynamics,sampling_rate,HRF_length,pre)
 %%
 % calculate HRF via simultaneously recorded neuronal_activity and
-% hemodynamics time-course.
+% hemodynamics time-courses.
 %
 % neuronal_activity: neuronal activity time-course in a single column.
 % hemodynamics: hemodynamics changes time-course in a single column.
