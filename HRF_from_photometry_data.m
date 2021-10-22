@@ -5,7 +5,7 @@ function [HRF]=HRF(neuronal_activity,hemodynamics,sampling_rate,HRF_length)
 %
 % neuronal_activity: neuronal activity time-course in a single column.
 % hemodynamics: hemodynamics changes time-course in a single column.
-% HRF_length: presumed HRF time length in seconds. Recommend to start with 25s.
+% HRF_length: presumed HRF time length in seconds. Recommend starting with 25s.
 %
 % Example: HRF(GCaMP_timecourse,Rhodamine_timecourse,10,25,0)
 % Tzu-Hao Harry Chao 2021/10/22
