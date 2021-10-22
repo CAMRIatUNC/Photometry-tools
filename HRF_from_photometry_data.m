@@ -2,10 +2,16 @@ function [HRF]=HRF_from_photometry_data(neuronal_activity,hemodynamics,sampling_
 %%
 % calculate HRF via simultaneously recorded neuronal_activity and
 % hemodynamics time-course.
-% neuronal_activity / hemodynamics: data recoreded in column
-% pre: 0 or any number if the neuronal_activity is considered as feedback
-% response and can be after the initiation of hemodynamic response.
-% Tzu-Hao Harry Chao 2020/07/04
+%
+% neuronal_activity: neuronal activity time-course in a single column.
+% hemodynamics: hemodynamics changes time-course in a single column.
+% pre: use 0 in most of the case,
+%      unless you assume the recorded neuronal activity and hemodynamic 
+%      response are drived by a common sourse instead of under a causal 
+%      relationship from neuronal activity to hemodynamic response.
+%
+% Example: HRF(GCaMP_timecourse,Rhodamine_timecourse,10,15,0)
+% Tzu-Hao Harry Chao 2021/10/22
 %%
 
 hemodynamics=hemodynamics-min(hemodynamics);
