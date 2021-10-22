@@ -7,7 +7,7 @@ function [HRF]=HRF(neuronal_activity,hemodynamics,sampling_rate,HRF_length,pre)
 % hemodynamics: hemodynamics changes time-course in a single column.
 % pre: use 0 in most of the case,
 %      unless you assume the recorded neuronal activity and hemodynamic 
-%      response are drived by a common sourse instead of under a causal 
+%      response are driven by a common source instead of under a causal 
 %      relationship from neuronal activity to hemodynamic response.
 %
 % Example: HRF(GCaMP_timecourse,Rhodamine_timecourse,10,25,0)
