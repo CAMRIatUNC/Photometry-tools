@@ -1,4 +1,4 @@
-function [HRF]=HRF_from_photometry_data(neuronal_activity,hemodynamics,sampling_rate,HRF_length,pre)
+function [HRF]=HRF(neuronal_activity,hemodynamics,sampling_rate,HRF_length,pre)
 %%
 % calculate HRF via simultaneously recorded neuronal_activity and
 % hemodynamics time-course.
