@@ -10,7 +10,7 @@ function [HRF]=HRF(neuronal_activity,hemodynamics,sampling_rate,HRF_length,pre)
 %      response are drived by a common sourse instead of under a causal 
 %      relationship from neuronal activity to hemodynamic response.
 %
-% Example: HRF(GCaMP_timecourse,Rhodamine_timecourse,10,15,0)
+% Example: HRF(GCaMP_timecourse,Rhodamine_timecourse,10,25,0)
 % Tzu-Hao Harry Chao 2021/10/22
 %%
 
