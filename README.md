@@ -1,4 +1,4 @@
-# HRF_from_photometry_data
+# HRF
 
 Calculate hemodynamic response function (HRF) from simultaneously recorded neuronal activities and hemodynamic changes.
 
