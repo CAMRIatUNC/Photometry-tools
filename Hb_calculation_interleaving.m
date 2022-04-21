@@ -5,6 +5,7 @@ function Hb_calculation_interleaving(filename,BG_filename,sampling_points,BG_sam
 % sampling_points: how many data time points to expect if there's no frame-lost
 % BG_sampling_points: how many data time points to be used from the background file
 % freq: simpling frequency
+% % Tzu-Hao Harry Chao (tzuhao@email.unc.edu), 2022/4/21
 
 %%
 Rscript='/Library/Frameworks/R.framework/Versions/4.0/Resources/bin/Rscript';
