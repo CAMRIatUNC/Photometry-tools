@@ -10,7 +10,7 @@ Read raw spectra, timestamps and corresponding wavelengths from the Oceanview ou
 
  
 
-# interleaving_fix_withBG
+# Hb_calculation_interleaving
 
 1. Read 400/488 nm interleaved recorded GCaMP spectra time series output from Oceanview.
 
