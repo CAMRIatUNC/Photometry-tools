@@ -1,5 +1,5 @@
 function [coef,data_fixed,Hbs,HbT]=Hb_calculation
-% modified by Tzu-Hao Harry Chao, 2022/4/21
+% Tzu-Hao Harry Chao (tzuhao@email.unc.edu), 2022/4/21
 % setpath for parameters
 Rscript='/Library/Frameworks/R.framework/Versions/4.0/Resources/bin/Rscript';
 Rfile='/Users/Mac/Documents/MATLAB/hemo_correction_script50/hemo_correction_script50_quad.R';
